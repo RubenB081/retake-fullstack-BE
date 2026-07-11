@@ -8,14 +8,8 @@ class Exercise(BaseModel):
     difficulty: str
     equipment: str
     description: str
-
     instructions: str
-
-    sets: int
-
-    reps: str
-
-    image: str
+    safety: str 
 
 
 class WorkoutSession(BaseModel):
