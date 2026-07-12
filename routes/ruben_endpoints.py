@@ -5,7 +5,8 @@ from queries.ruben_queries import (
     get_all_exercises,
     get_filtered_exercises,
     get_exercise_by_id,
-    create_workout_session
+    create_workout_session,
+    get_all_sessions
 )
 router = APIRouter()
 
@@ -22,10 +23,9 @@ def exercises(
     return get_all_exercises()
 
 
-@router.post("/sessions")
-def start_session(session: WorkoutSession):
-
-    return create_workout_session(session.workout_id)
+@router.get("/sessions")
+def sessions():
+    return get_all_sessions()
 
 @router.get("/exercises/{exercise_id}")
 def exercise(exercise_id: int):
@@ -39,3 +39,8 @@ def exercise(exercise_id: int):
         )
 
     return exercise
+
+@router.post("/sessions")
+def start_session(session: WorkoutSession):
+
+    return create_workout_session(session.workout_id)
