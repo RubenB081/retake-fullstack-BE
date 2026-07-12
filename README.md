@@ -10,13 +10,26 @@ Backend API for the ForgeFit Full Stack application.
 
 ---
 
+## Description
+
+ForgeFit is a full-stack fitness web application that allows users to browse exercises, explore workout plans, and track workout sessions through an interactive workout player. The project is built with HTML, CSS, JavaScript, FastAPI, PostgreSQL, Neon, and Bootstrap.
+
 ## Technologies
 
-- Python
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 - FastAPI
 - PostgreSQL
 - Neon Database
-- Psycopg
+- Vercel
+- Netlify
+
+## Live Demo
+Frontend: https://forgefit-training.netlify.app
+
+Backend (Swagger): https://retake-fullstack-be.vercel.app/docs
 
 ---
 
@@ -67,3 +80,4 @@ uvicorn main:app --reload
 ```
 http://127.0.0.1:8000/docs
 ```
+
