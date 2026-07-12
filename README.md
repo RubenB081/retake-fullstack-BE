@@ -31,6 +31,10 @@ Frontend: https://forgefit-training.netlify.app
 
 Backend (Swagger): https://retake-fullstack-be.vercel.app/docs
 
+github (BE): https://github.com/RubenB081/retake-fullstack-BE
+
+github (FE): https://github.com/RubenB081/retake-fullstack-FE
+
 ---
 
 ## Features
